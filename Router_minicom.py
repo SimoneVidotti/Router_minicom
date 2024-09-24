@@ -19,3 +19,5 @@ print('\n! Remember the baud configuration ! (Es: -> 9600 baud)\n')
 
 Porta = input('Choose port name (tree, Es: /dev/ttyUSB0): ')
 Line()
+
+os.system(f"sudo minicom -D {Porta} -b 9600")
